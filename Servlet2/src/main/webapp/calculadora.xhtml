@@ -4,8 +4,23 @@
 	xmlns:p="http://primefaces.org/ui">
 	<h:body>
 		<h:form id="calculadora_form" >
-			<p:outputLabel Johann es gurrero style="display:none" />
-
+			<p:inputText  id= "lista"  type="text" binding="#{input}"/>
+			<p:commandButton value = "Enviar" update="calculadora_form" actionListener="#{calculadoraBean.calcularTodo(input.value)}"/>
+			<br><p:outputLabel value="Promedio:" /></br>
+			<p:outputLabel value="#{calculadoraBean.promedio}" />
+			<br><p:outputLabel value="Desviación Estandar:" /></br>
+			<p:outputLabel value="#{calculadoraBean.desviacion}" />
+			<br><p:outputLabel value="Varianza:" /></br>
+			<p:outputLabel value="#{calculadoraBean.varianza}" />
+			<br><p:outputLabel value="Moda:" /></br>
+			<p:outputLabel value="#{calculadoraBean.moda}" />
+			<br> <p:commandButton value = "Reiniciar" update="calculadora_form" actionListener="#{calculadoraBean.restart()}"/></br>
+			<br></br>
+			<p:dataTable var="Valores Ingresados" value="#{calculadoraBean.valoresIngresados}" style="width:250px;" styleClass = "Table">
+				<p:column headerText="Valores Ingresados" >
+					<h:outputText value= "#{valoresIngresados}" />
+				</p:column>
+			</p:dataTable>
 		</h:form>
 	</h:body>
 </html>

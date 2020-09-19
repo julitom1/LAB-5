@@ -20,19 +20,19 @@
 
 **Metodo doPost**
 
-![](img/doPost.JPG)
+![](img/img/doPost.JPG)
 
  
  La diferencia entre doGet y doPost es en su url, en el doGet aparece los parametros que se recibieron y en el doPost lo oculta
  **codigo html**
  
- ![](img/html.JPG)
+ ![](img/img/html.JPG)
  
  
  **Calculadora con @ApplicationScoped.**
  
- ![](img/calculadora1.JPG)
- ![](img/calculadora2.JPG)
+ ![](img/img/calculadora1.JPG)
+ ![](img/img/calculadora2.JPG)
  
  
  @ApplicacionScoped hace que sea una aplicación compartida con otros usuarios, mientras que en @SessionScoped cada usuario tiene su propia aplicación.
