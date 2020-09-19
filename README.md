@@ -29,10 +29,13 @@
  ![](img/html.JPG)
  
  
- **Calculadora**
+ **Calculadora con @ApplicationScoped.**
  
- ![](img/calculadora.JPG)
+ ![](img/calculadora1.JPG)
+ ![](img/calculadora2.JPG)
  
+ 
+ @ApplicacionScoped hace que sea una aplicación compartida con otros usuarios, mientras que en @SessionScoped cada usuario tiene su propia aplicación.
  
  
      
